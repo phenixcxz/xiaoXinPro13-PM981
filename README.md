@@ -15,7 +15,7 @@
 * 注意：第一次启动可能不成功，长按电源键重启多试几次（只有更改clover后才会出现此情况，正常使用不会）
 * 这不是安装教程，只是PM981硬盘安装黑苹果的折中办法，详细安装教程请移步[小兵博客](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html)
 * `clover`不支持PM981升级MAC系统，想升级系统请在win下完整备份MAC系统后再尝试。
-* 升级方法
+* 升级方法（很大概率升级失败，务必备份系统，不建议升级）
   * 备份MAC系统
   * 切换到OC引导
   * OC引导下升级系统
