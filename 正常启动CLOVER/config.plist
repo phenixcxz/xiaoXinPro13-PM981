@@ -206,6 +206,16 @@
 					<key>Replace</key>
 					<data>WFEwRA==</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change HDAS to HDEF</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>SERBUw==</data>
+					<key>Replace</key>
+					<data>SERFRg==</data>
+				</dict>
 			</array>
 		</dict>
 		<key>FixHeaders</key>
@@ -240,7 +250,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 keepsyms=1 slide=0 -lilubetaall brcmfx-country=#a -alcdbg</string>
+		<string>dart=0 keepsyms=1 slide=0 -lilubetaall -igfxmlr</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
@@ -266,7 +276,7 @@
 	<key>CPU</key>
 	<dict>
 		<key>Type</key>
-		<string>0x0705</string>
+		<string>0x0605</string>
 		<key>UseARTFrequency</key>
 		<false/>
 	</dict>
@@ -410,6 +420,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>EmbeddedThemeType</key>
+		<string>Dark</string>
 		<key>Hide</key>
 		<array>
 			<string>Preboot</string>
@@ -432,6 +444,8 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
+		<key>ScreenResolution</key>
+		<string>1440x900</string>
 		<key>Theme</key>
 		<string>Catalina</string>
 	</dict>
@@ -468,25 +482,6 @@
 		<false/>
 		<key>KernelPm</key>
 		<false/>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.15.x</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>D4KnAwAA</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.15.x</string>
-				<key>Name</key>
-				<string>AppleIntelCFLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>D4IAAAAA</data>
-			</dict>
-		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
