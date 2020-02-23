@@ -1,7 +1,6 @@
 # xiaoXinPro-i5-PM981
-**PM981硬盘不能直接安装MAC需要选择克隆的方式**
 
-这里只是小新PRO13硬盘为PM981的折中方案，为了更好的使用黑果，强烈建议更换其他型号硬盘。
+**这里只是小新PRO13硬盘为PM981的折中方案，为了更好的使用黑果，强烈建议更换其他型号硬盘。**
 
 
 使用方法一：克隆法（一定成功）
@@ -18,14 +17,22 @@
 3. 删除分区内的`clover`文件夹，
 4. 拷贝`安装clover`文件夹到U盘EFI分区原来的`clover`位置，并更名为`clover`
 5. 按照[小兵博客](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html)正常安装（安装过程不需要选择config_install文件）
+6. 安装完成如果无法启动，请参照第四条将引导文件替换为`正常使用clover`，第一次引导过程需要选择`install_config`,进入系统重建缓存后下次开机不需要选择。
+
+关于系统升级
+---
+* PM981升级系统很有可能升级失败，务必在win下备份系统。
+* 我的电脑可以正常升级，但是缺少更多测试，无法保证所有的小新都能升级。
+* 如果使用`正常使用clover`升级失败请尝试使用`安装clover`。
+
 
 关于PM981补丁
 ---
 补丁分为安装补丁，和正常使用补丁，我已经放入对应文件夹,用此处的clover不需要修改
 
-* 正常使用需要补丁`clover/ACPI/SSDT-nvme.aml`和`clover/kexts/other/HackrNVMeFamily.kext`
+* 正常使用补丁位于`正常使用clover/ACPI/SSDT-nvme.aml`和`正常使用clover/kexts/other/HackrNVMeFamily.kext`
 
-* 安装需要补丁`clover/kexts/NVMeFix.kext`
+* 安装补丁位于`安装clover/kexts/NVMeFix.kext`
 
 如果是其他型号计算机可以尝试添加上面所述的补丁到你的clover,不保证可以使用。
 
