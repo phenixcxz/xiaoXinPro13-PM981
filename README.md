@@ -17,7 +17,7 @@
 3. 删除分区内的`clover`文件夹，
 4. 拷贝`安装clover`文件夹到U盘EFI分区原来的`clover`位置，并更名为`clover`
 5. 按照[小兵博客](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html)正常安装（安装过程不需要选择config_install文件）
-6. 安装完成如果无法启动，请参照第四条将引导文件替换为`正常使用clover`，第一次引导过程需要选择`install_config`,进入系统重建缓存后下次开机不需要选择。
+6. 安装完成如果无法启动，请参照第四条将引导文件替换为`正常使用clover`，第一次引导过程需要选择`install_config`,进入系统重建缓存后下次开机不需要选择（i7 cpu 请删除config.plist把config_i7.plist更名为config.plist,**如果i5无法启动请尝试此项操作**）
 
 关于系统升级
 ---
