@@ -267,7 +267,7 @@
 	<key>CPU</key>
 	<dict>
 		<key>Type</key>
-		<string>0x0605</string>
+		<string>0x0705</string>
 		<key>UseARTFrequency</key>
 		<false/>
 	</dict>
