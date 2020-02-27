@@ -92,17 +92,17 @@
 				<key>#Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>FixHPET</key>
-				<false/>
+				<true/>
 				<key>FixIPIC</key>
 				<false/>
 				<key>FixRTC</key>
-				<false/>
+				<true/>
 				<key>FixRegions</key>
 				<false/>
 				<key>FixShutdown</key>
 				<false/>
 				<key>FixTMR</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -166,6 +166,36 @@
 					<key>Replace</key>
 					<data>WFMzXw==</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>_Q50 to XQ50</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1E1MA==</data>
+					<key>Replace</key>
+					<data>WFE1MA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>_LID to XLID</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0xJRAA=</data>
+					<key>Replace</key>
+					<data>WExJRAA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>GPRW to XPRW</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>R1BSVwI=</data>
+					<key>Replace</key>
+					<data>WFBSVwI=</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -174,7 +204,7 @@
 				<key>Length</key>
 				<integer>12565</integer>
 				<key>Signature</key>
-				<string>SSDT</string>
+				<string>DSDT</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
@@ -209,7 +239,9 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 keepsyms=1 slide=0 -lilubetaall -igfxmlr</string>
+		<string>dart=0 keepsyms=1 slide=0 -lilubetaall -alcdbg alcid=99 -alcbeta -igfxmlr</string>
+		<key>CustomLogo</key>
+		<string>Theme</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
@@ -235,7 +267,7 @@
 	<key>CPU</key>
 	<dict>
 		<key>Type</key>
-		<string>0x0605</string>
+		<string>0x0705</string>
 		<key>UseARTFrequency</key>
 		<false/>
 	</dict>
@@ -259,7 +291,9 @@
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>device-id</key>
-				<data>yJ0AAA==</data>
+				<data>cKEAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>layout-id</key>
 				<integer>99</integer>
 			</dict>
@@ -268,7 +302,7 @@
 				<key>AAPL,ig-platform-id</key>
 				<data>BAClPg==</data>
 				<key>device-id</key>
-				<data>pT4AAA==</data>
+				<data>pT4ABA==</data>
 				<key>disable-external-gpu</key>
 				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
@@ -333,8 +367,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>EmbeddedThemeType</key>
-		<string>Dark</string>
 		<key>Hide</key>
 		<array>
 			<string>Preboot</string>
@@ -357,8 +389,6 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
-		<key>ScreenResolution</key>
-		<string>1440x900</string>
 		<key>Theme</key>
 		<string>Catalina</string>
 	</dict>
@@ -388,7 +418,7 @@
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>FakeCPUID</key>
-		<string>0x0806EC</string>
+		<string>0x0806EB</string>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelLapic</key>
@@ -398,12 +428,16 @@
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.15.x</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>D4KnAwAA</data>
 				<key>InfoPlistPatch</key>
 				<false/>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
 				<key>Name</key>
 				<string>AppleIntelCFLGraphicsFramebuffer</string>
 				<key>Replace</key>
@@ -421,17 +455,17 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>11/14/2019</string>
+		<string>01/05/2020</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP152.88Z.F000.B00.1911142159</string>
+		<string>MBP154.88Z.F000.B00.2001052048</string>
 		<key>Board-ID</key>
-		<string>Mac-827FB448E656EC26</string>
+		<string>Mac-53FDB3D8DB8CA971</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02938306J9JH4R1M</string>
+		<string>FVF0531084N0000UE</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -443,7 +477,7 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>1037.60.58.0.0</string>
+		<string>1037.80.41.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
@@ -457,15 +491,13 @@
 		<key>Mobile</key>
 		<true/>
 		<key>PlatformFeature</key>
-		<string>0x00</string>
+		<string>0x02</string>
 		<key>ProductName</key>
-		<string>MacBookPro15,2</string>
-		<key>ProductName-Comment</key>
-		<string>Using Haswell MacBookAir6,2 until Clover has support for KabyLake identifiers</string>
+		<string>MacBookPro15,4</string>
 		<key>SerialNumber</key>
-		<string>C02ZF5Z4JHCD</string>
+		<string>FVFDX0BBL40Y</string>
 		<key>SmUUID</key>
-		<string>E8097DDC-D893-4A07-9772-76C432D7258F</string>
+		<string>4703FE34-7128-4C7B-AEB6-8FD1F51A71B0</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
