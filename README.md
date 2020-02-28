@@ -11,13 +11,14 @@
 
 使用方法二：正常安装
 ---
-**我测试了两次安装，两次升级都成功了，缺少更多测试，不保证一定成功，不成功请选择克隆法**
 1. 下载合适安装镜像写入U盘。
 2. 使用磁盘精灵打开U盘`EFI`分区，
 3. 删除分区内的`clover`文件夹，
 4. 拷贝`安装clover`文件夹到U盘EFI分区原来的`clover`位置，并更名为`clover`
 5. 按照[小兵博客](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html)正常安装（安装过程不需要选择config_install文件）
 6. 安装完成如果无法启动，请参照第四条将引导文件替换为`正常使用clover`，第一次引导过程需要选择`install_config`,进入系统重建缓存后下次开机不需要选择（i7 cpu 请删除config.plist把config_i7.plist更名为config.plist,**如果i5无法启动请尝试此项操作**）
+
+
 
 关于系统升级
 ---
@@ -61,13 +62,14 @@
 * 触摸板驱动正常，支持手势
 * 声卡内置MIC无法驱动，其余正常
 * FN+F1-F9快捷键正常
-* 无法完全睡眠，PM981硬盘正常盒盖不关wifi和蓝牙耗电大概`6%~7%/h`,关闭wifi和蓝牙`3%~4%`
+* PM981硬盘正常盒盖不关wifi和蓝牙耗电大概`6%~7%/h`,关闭wifi和蓝牙`3%~4%`
 * 打开QQ+Chrome看小时大概使用8小时左右
+* AOAC睡眠，睡眠期间2%每小时，唤醒需要按电源键
 
 现存问题：
 ---
-* 开启store视屏自动播放功能/使用腾讯视屏会导致显卡变频失效
+* 内置声卡无mic
 
-# 请详细阅读小兵大佬提供的[安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html)，按照教程操作，不要错漏任何一步。
+# 请详细阅读小兵大佬提供的[安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html)，按照教程操作，不要错漏任何一步，请按教程操作完有问题再提问。
 
 # 本人只是搬运工，感谢小兵大佬和宪武大佬以及众多群友的无私奉献，感谢群友`HellO`提供的PM981补丁，有什么疑难问题请到黑果群提问，此处不做解答。
