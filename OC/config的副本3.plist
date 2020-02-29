@@ -1046,13 +1046,13 @@
 			<key>#Target</key>
 			<integer>67</integer>
 			<key>DisableWatchDog</key>
-			<false/>
+			<true/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
 			<key>Target</key>
-			<integer>3</integer>
+			<integer>67</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -1066,7 +1066,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Name</key>
-				<string>Windows10</string>
+				<string>U-Win10</string>
 				<key>Path</key>
 				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,23-56-B7-91-8C-38-25-00)/HD(1,GPT,39929C4F-83D5-4B62-9195-410EC385DF5B,0x800,0x82000)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
 			</dict>
@@ -1086,7 +1086,7 @@
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>ScanPolicy</key>
-			<integer>3080451</integer>
+			<integer>0</integer>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
