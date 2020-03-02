@@ -63,13 +63,19 @@
 * 触摸板驱动正常，支持手势
 * 声卡内置MIC无法驱动，其余正常
 * FN+F1-F9快捷键正常
-* PM981硬盘正常盒盖不关wifi和蓝牙耗电大概`6%~7%/h`,关闭wifi和蓝牙`3%~4%`
 * 打开QQ+Chrome看小时大概使用8小时左右
 * AOAC睡眠，睡眠期间2%每小时，唤醒需要按电源键
+* clover已经移植睡眠补丁，OC & clover均支持AOAC睡眠
 
 现存问题：
 ---
 * 内置声卡无mic
+* 启动速度慢：偶尔启动时间接近50s,原因未知
+  * 可能解决办法：参考[教程](http://bbs.pcbeta.com/viewthread-1825055-1-1.html)给CPU降压，我在OC引导下给CPU降压100mv后启动时间大概十几秒，缺少测试，不保证效果，操作有烧CPU风险，不建议小白操作。
+  
+可能出现状况：
+---
+待补充；
 
 # 请详细阅读小兵大佬提供的[安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html)，按照教程操作，不要错漏任何一步，请按教程操作完有问题再提问。
 
