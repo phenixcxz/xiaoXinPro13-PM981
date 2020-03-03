@@ -72,9 +72,15 @@
 * 内置声卡无mic
 * 启动速度慢：偶尔启动时间接近50s,原因未知
   
-可能出现状况：
+可能出现状况和解决办法
 ---
-待补充；
+<details><summary>使用BCM94360CS2网卡死机</summary>
+**表现**
+电脑负载高时突然屏幕卡住，电脑没有任何响应
+**可能解决办法**
+参考DW1820A屏蔽转接卡正面的两个针脚：[参考链接](http://bbs.pcbeta.com/viewthread-1846508-1-1.html)
+  
+</details>
 
 # 请详细阅读小兵大佬提供的[安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html)，按照教程操作，不要错漏任何一步，请按教程操作完有问题再提问。
 
