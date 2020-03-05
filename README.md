@@ -17,15 +17,17 @@
 3. 删除分区内的`clover`文件夹，
 4. 拷贝`安装clover`文件夹到U盘EFI分区原来的`clover`位置，并更名为`clover`
 5. 按照[小兵博客](https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html)正常安装（安装过程不需要选择config_install文件）
-6. 安装完成如果无法启动，请参照第四条将引导文件替换为`正常使用clover`，第一次引导过程需要选择`install_config`,进入系统重建缓存后下次开机不需要选择（i7 cpu 请删除config.plist把config_i7.plist更名为config.plist,**如果i5无法启动请尝试此项操作**）
+6. 安装完成如果无法启动，请参照第四条将引导文件替换为`正常使用clover`，第一次引导需要选择`install_config`,进入系统重建缓存。（如果重建缓存后无法启动，请使用config_i7引导）
 
 
 
 关于系统升级
 ---
-* PM981升级系统很有可能升级失败，务必在win下备份系统。
-* 我的电脑可以正常升级，但是缺少更多测试，无法保证所有的小新都能升级。
-* 如果使用`正常使用clover`升级失败请尝试使用`安装clover`。
+**PM981升级系统可能失败，务必备份系统**
+1. 使用`正常使用clover/OC`进入系统，在系统设置里升级系统
+2. 使用`安装clover`引导安装升级文件（带data或者pn后缀，如果无法成功，请多试几次或者自己找办法解决）
+3. 使用`正常使用clover`引导进入系统更新缓存。
+
 
 
 关于PM981补丁
@@ -80,6 +82,7 @@
 可能出现状况和解决办法
 ---
 <details><summary>使用BCM94360CS2网卡死机</summary>
+	
 **表现**
 电脑负载高时突然屏幕卡住，电脑没有任何响应
 **可能解决办法**
