@@ -92,43 +92,75 @@
 				<key>#Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>FixHPET</key>
-				<true/>
+				<false/>
 				<key>FixIPIC</key>
 				<false/>
 				<key>FixRTC</key>
-				<true/>
-				<key>FixRegions</key>
 				<false/>
+				<key>FixRegions</key>
+				<true/>
 				<key>FixShutdown</key>
 				<false/>
 				<key>FixTMR</key>
-				<true/>
+				<false/>
+				<key>FixWAK</key>
+				<false/>
 			</dict>
 			<key>Patches</key>
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>_Q38 to XQ38</string>
+					<string>change EC0 to EC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X1EzOA==</data>
+					<data>RUMwXw==</data>
 					<key>Replace</key>
-					<data>WFEzOA==</data>
+					<data>RUNfXw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>_Q39 to XQ39</string>
+					<string>change H_EC to EC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X1EzOQ==</data>
+					<data>SF9FQw==</data>
 					<key>Replace</key>
-					<data>WFEzOQ==</data>
+					<data>RUNfXw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>_BIF renamed XBIF</string>
+					<string>change ECDV to EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>RUNEVg==</data>
+					<key>Replace</key>
+					<data>RUNfXw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Fix AsRock Z390 BIOS DSDT Device(RTC) bug</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>oAqTU1RBUwE=</data>
+					<key>Replace</key>
+					<data>oAqRCv8L//8=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _OSI to XOSI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X09TSQ==</data>
+					<key>Replace</key>
+					<data>WE9TSQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>BAT1:_BIF to XBIF</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -138,7 +170,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>_BST renamed XBST</string>
+					<string>BAT1:_BST to XBST</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -148,13 +180,63 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>PNLF renamed XNLF</string>
+					<string>BAT1:_Q39 to XQ39(LenovoPRO13-DOWN)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>UE5MRg==</data>
+					<data>X1EzOQ==</data>
 					<key>Replace</key>
-					<data>WE5MRg==</data>
+					<data>WFEzOQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>BAT1:_Q38 to XQ38(LenovoPRO13-up)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1EzOA==</data>
+					<key>Replace</key>
+					<data>WFEzOA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename EHC1 to EH01 (USB)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>RUhDMQ==</data>
+					<key>Replace</key>
+					<data>RUgwMQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename EHC2 to EH02 (USB)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>RUhDMg==</data>
+					<key>Replace</key>
+					<data>RUgwMg==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename XHCI to XHC (USB)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>WEhDSQ==</data>
+					<key>Replace</key>
+					<data>WEhDXw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename XHC1 to XHC (USB)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>WEhDMQ==</data>
+					<key>Replace</key>
+					<data>WEhDXw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -162,49 +244,25 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X1MzXw==</data>
+					<data>CF9TM18=</data>
 					<key>Replace</key>
-					<data>WFMzXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>_Q50 to XQ50</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1E1MA==</data>
-					<key>Replace</key>
-					<data>WFE1MA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>_LID to XLID</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X0xJRAA=</data>
-					<key>Replace</key>
-					<data>WExJRAA=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>GPRW to XPRW</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>R1BSVwI=</data>
-					<key>Replace</key>
-					<data>WFBSVwI=</data>
+					<data>CFhTM18=</data>
 				</dict>
 			</array>
+			<key>SlpSmiAtWake</key>
+			<false/>
+			<key>SuspendOverride</key>
+			<false/>
 		</dict>
 		<key>DropTables</key>
 		<array>
 			<dict>
-				<key>Length</key>
-				<integer>12565</integer>
 				<key>Signature</key>
-				<string>DSDT</string>
+				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>ECDT</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
@@ -212,6 +270,8 @@
 		<key>FixMCFG</key>
 		<false/>
 		<key>HaltEnabler</key>
+		<false/>
+		<key>PatchAPIC</key>
 		<false/>
 		<key>SSDT</key>
 		<dict>
@@ -239,9 +299,9 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 keepsyms=1 slide=0 -lilubetaall -alcdbg alcid=99 -alcbeta -igfxmlr</string>
+		<string>keepsyms=1 -no_compat_check -lilubetaall nv_disable=1</string>
 		<key>CustomLogo</key>
-		<string>Theme</string>
+		<string>Apple</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
@@ -255,14 +315,9 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>3</integer>
+		<integer>10</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
-	</dict>
-	<key>BootGraphics</key>
-	<dict>
-		<key>UIScale</key>
-		<integer>2</integer>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -276,33 +331,22 @@
 		<key>Audio</key>
 		<dict>
 			<key>AFGLowPowerState</key>
-			<true/>
-			<key>Inject</key>
-			<string>No</string>
+			<false/>
 			<key>ResetHDA</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>HDMIInjection</key>
-		<true/>
+		<false/>
 		<key>LANInjection</key>
 		<false/>
 		<key>Properties</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
-			<dict>
-				<key>device-id</key>
-				<data>cKEAAA==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>layout-id</key>
-				<integer>99</integer>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>BAClPg==</data>
 				<key>device-id</key>
-				<data>pT4ABA==</data>
+				<data>pT4AAA==</data>
 				<key>disable-external-gpu</key>
 				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
@@ -334,14 +378,16 @@
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<true/>
+			<false/>
 			<key>FixOwnership</key>
 			<false/>
 			<key>HighCurrent</key>
 			<false/>
+			<key>Inject</key>
+			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>GUI</key>
 	<dict>
@@ -418,7 +464,7 @@
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>FakeCPUID</key>
-		<string>0x0806EB</string>
+		<string>0x0906E9</string>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelLapic</key>
@@ -427,6 +473,38 @@
 		<false/>
 		<key>KextsToPatch</key>
 		<array>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port limit patch #1/2 10.15.x (credit DalianSky)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>g/sPDw==</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>g/s/Dw==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port limit patch #2/2 10.15.x (credit DalianSky)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>g/kPDw==</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>g/k/Dw==</data>
+			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.15.x</string>
@@ -451,21 +529,23 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>ROM</key>
+		<data>zGuXk8f/</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>01/05/2020</string>
+		<string>11/08/2019</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP154.88Z.F000.B00.2001052048</string>
+		<string>MBP154.88Z.F000.B00.1911080307</string>
 		<key>Board-ID</key>
 		<string>Mac-53FDB3D8DB8CA971</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>FVF0531084N0000UE</string>
+		<string>FVF9303004N00001H</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -477,7 +557,7 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>1037.80.41.0.0</string>
+		<string>1037.60.55.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
@@ -494,10 +574,12 @@
 		<string>0x02</string>
 		<key>ProductName</key>
 		<string>MacBookPro15,4</string>
+		<key>ProductName-Comment</key>
+		<string>Using Haswell MacBookAir6,2 until Clover has support for KabyLake identifiers</string>
 		<key>SerialNumber</key>
-		<string>FVFDX0BBL40Y</string>
+		<string>FVFZ41ZCL40Y</string>
 		<key>SmUUID</key>
-		<string>4703FE34-7128-4C7B-AEB6-8FD1F51A71B0</string>
+		<string>4ED2BA76-D413-4CCF-9B9A-392C5B93C7FF</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
